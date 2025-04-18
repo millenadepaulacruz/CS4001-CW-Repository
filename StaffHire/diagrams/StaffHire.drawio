@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="24.9.1">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1977" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--0" value="StaffHire" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="10" y="15" width="320" height="450" as="geometry">
+            <mxRectangle x="40" y="20" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--1" value="# vacancyNumber: int&#xa;# designationType: String&#xa;# jobType: String&#xa;# staffName: String&#xa;# joiningDate: String&#xa;# qualification: String&#xa;# appointedBy: String&#xa;# joined: boolean&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="26" width="320" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="150" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--5" value="+StaffHire(vacancyNumber: int, designationType: String,&#xa;jobType: String, staffName: String, joiningDate: String,&#xa;qualification: String, appointedBy: String, joined: boolean)&#xa;+getVacancyNumber: int&#xa;+setVacancyNumber(vacancyNumber: int): void&#xa;+getDesignationType(): String&#xa;+setDesignationType(designation: String): void&#xa;+getJobType(): String&#xa;+setJobType(jobType:String): void&#xa;+getStaffName(): String&#xa;+setStaffName(staffName: String): void&#xa;+getJoiningDate(): String&#xa;+setJoiningDate(joiningDate: String): void&#xa;+getQualification(): String&#xa;+setQualification(qualification: String): void&#xa;+getAppointedBy(): String&#xa;+setAppointedBy(appointedBy: String): void&#xa;+getJoined(): boolean&#xa;+changeStatus(joined: boolean):void&#xa;+displayInfo(): String&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="158" width="320" height="292" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-0" value="FullTimeStaffHire&#xa;&lt;&lt;extends StaffHire&gt;&gt;&#xa;" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="5" width="360" height="222" as="geometry">
+            <mxRectangle x="230" y="20" width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-1" value="- salary: double&#xa;- weeklyFractionalHours: int" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-0">
+          <mxGeometry y="40" width="360" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-2" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-0">
+          <mxGeometry y="74" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-3" value="+FullTimeStaffHire(vacancyNumber: int, designationType: String,&#xa;jobType: String, staffName: String, joiningDate: String,&#xa;qualification: String, appointedBy: String, joined: boolean, &#xa;salary: double, weeklyFractinalHours: int)&#xa;+getSalary(): int&#xa;+setNewSalary(salary: double): double&#xa;+getWeeklyFractionalHours(): int&#xa;+setWeeklyFractionalHours(weeklyFractionalHours: int): void&#xa;+displayInfo(): String&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-0">
+          <mxGeometry y="82" width="360" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-4" value="PartTimeStaffHire&#xa;&lt;&lt;extends StaffHire&gt;&gt;" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="10" y="575" width="360" height="324" as="geometry">
+            <mxRectangle x="234" y="80" width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-5" value="-workingHours: double&#xa;-wagesPerHour: double&#xa;-shifts: String&#xa;-terminated: boolean" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-4">
+          <mxGeometry y="40" width="360" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-6" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-4">
+          <mxGeometry y="104" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-7" value="+PartTimeStaffHire(vacancyNumber: int, designationType: String,&#xa;jobType: String, staffName: String, joiningDate: String,&#xa;qualification: String, appointedBy: String, joined: boolean, &#xa;workingHours: double, wagesPerHour: double, shifts: String, &#xa;terminated: boolean)&#xa;+getWorkingHours(): double&#xa;+setWorkingHours(workingHours: double): void&#xa;+getWagesPerHour(): double&#xa;+setWagesPerHour(wagesPerHour: double): void&#xa;+getShifts(): String&#xa;+setWorkingShifts(shifts: String): String&#xa;+terminateStaff(): boolean&#xa;+getTerminated(): boolean&#xa;+displayInfo(): String&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-4">
+          <mxGeometry y="112" width="360" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-17" value="GUI &#xa;&lt;&lt;implements ActionListener&gt;&gt;" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="470" y="234" width="250" height="930" as="geometry">
+            <mxRectangle x="234" y="80" width="160" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-18" value="- database: ArrayList&lt;StaffHire&gt;                         &#xa;- staffNameField: JTextField                              &#xa;- vacancyNumberField: JTextField                          &#xa;- designationTypeField: JTextField                        &#xa;- jobTypeField: JTextField                                &#xa;- joiningDateField: JTextField                           &#xa;- qualificationField: JTextField                          &#xa;- appointedByField: JTextField                            &#xa;- salaryField: JTextField                                 &#xa;- weeklyFractionalHoursField: JTextField                  &#xa;- workingHoursField: JTextField                           &#xa;- wagesPerHourField: JTextField                           &#xa;- startMessage: JTextField                                &#xa;- displayNumberField: JTextField                          &#xa;- employeeDisplayField: JTextField                        &#xa;- newSalaryField: JTextField                             &#xa;- displayArea: JTextArea                                  &#xa;- frame: JFrame                                          &#xa;- mainScreenFrame: JFrame                                 &#xa;- fullTimeFrame: JFrame                                   &#xa;- partTimeFrame: JFrame                                   &#xa;- displayEmployeesFrame: JFrame                           &#xa;- salaryFrame: JFrame                                     &#xa;- shiftsFrame: JFrame                                     &#xa;- addFTButton: JButton                                    &#xa;- addPTButton: JButton                                    &#xa;- clearFullButton: JButton                                &#xa;- clearPartButton: JButton                                &#xa;- nextPageButton: JButton                                 &#xa;- returnFromFullTimeButton: JButton                      &#xa;- returnFromPartTimeButton: JButton            &#xa;- returnFromDisplayButton: JButton               &#xa;- fullTimeButton: JButton                                &#xa;- partTimeButton: JButton                              &#xa;- displayEmployeesButton: JButton               &#xa;- displayButton: JButton                                 &#xa;- setSalaryButton: JButton                             &#xa;- setShiftsButton: JButton                              &#xa;- terminateButton: JButton                             &#xa;- confirmSalaryButton: JButton                      &#xa;- confirmShiftsButton: JButton                       &#xa;- group: ButtonGroup                                     &#xa;- group1: ButtonGroup                                   &#xa;- group2: ButtonGroup                                   &#xa;- joinedOption: JRadioButton                         &#xa;- morningOption: JRadioButton                      &#xa;- dayOption: JRadioButton                             &#xa;- eveningOption: JRadioButton                      &#xa;- terminatedOption: JRadioButton                  &#xa;- permanent: JRadioButton                            &#xa;- contract: JRadioButton                                  &#xa;- temporary: JRadioButton" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-17">
+          <mxGeometry y="40" width="250" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-19" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-17">
+          <mxGeometry y="780" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-20" value="+ GUI()&#xa;+mainScreen(): void&#xa;+fullTimeEmployee(): void&#xa;+partTimeEmployee(): void&#xa;+displayEmployees(): void&#xa;+newSalaryScreen(): void&#xa;+setShiftsScreen(): void&#xa;+ actionPerformed(e: ActionEvent): void &#xa;+ static main(args: String[]): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="5aMnuCD3aqie47kpc60D-17">
+          <mxGeometry y="788" width="250" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-24" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0.995;exitY=0.04;exitDx=0;exitDy=0;entryX=1.001;entryY=0.116;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5aMnuCD3aqie47kpc60D-18" target="5aMnuCD3aqie47kpc60D-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="245" as="sourcePoint" />
+            <mxPoint x="520" y="245" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="790" y="305" />
+              <mxPoint x="790" y="165" />
+              <mxPoint x="790" y="31" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-25" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0.002;exitY=0.057;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5aMnuCD3aqie47kpc60D-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="391" y="417" as="sourcePoint" />
+            <mxPoint x="330" y="315" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-26" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=-0.004;exitY=0.673;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.996;entryY=0.401;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5aMnuCD3aqie47kpc60D-18" target="5aMnuCD3aqie47kpc60D-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="551" as="sourcePoint" />
+            <mxPoint x="370" y="637" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.561;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5aMnuCD3aqie47kpc60D-4" target="zkfFHV4jXpPFQw0GAbJ--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5aMnuCD3aqie47kpc60D-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.997;entryY=0.929;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5aMnuCD3aqie47kpc60D-3" target="zkfFHV4jXpPFQw0GAbJ--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

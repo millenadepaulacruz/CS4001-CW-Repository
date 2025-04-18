@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=GUI
+comment1.params=
+comment1.target=GUI()
+comment2.params=
+comment2.target=void\ mainScreen()
+comment3.params=
+comment3.target=void\ fullTimeEmployee()
+comment4.params=
+comment4.target=void\ partTimeEmployee()
+comment5.params=
+comment5.target=void\ displayEmployees()
+comment6.params=
+comment6.target=void\ newSalaryScreen()
+comment7.params=
+comment7.target=void\ setShiftsScreen()
+comment8.params=e
+comment8.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10
